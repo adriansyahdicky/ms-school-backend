@@ -1,9 +1,9 @@
 ini adalah microservice BE dengan menggunakan java spring boot:
 
 spesification dari project :
--Java versi 17
--Spring boot versi 3.1.10
--postgre sql
+-Java versi 17 <br/>
+-Spring boot versi 3.1.10 <br/>
+-postgre sql <br/>
 
 A. untuk menjalankan aplikasi jalankan script ini :
 1. create database db_user_management;
@@ -61,5 +61,9 @@ A. untuk menjalankan aplikasi jalankan script ini :
 	CONSTRAINT subjects_pkey PRIMARY KEY (id)
 );
 
-B. jalankan service registry dulu
+B. jalankan service : 
+   1. running service-registry
+   2. running gateway-service
+   3. running user-management
+   4. running course-management
    
