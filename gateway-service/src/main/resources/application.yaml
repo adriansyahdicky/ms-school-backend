@@ -11,10 +11,28 @@ spring:
           uri: lb://user-management
           predicates:
             - Path=/user-management/**
+          metadata:
+            cors:
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
+              allowedHeaders: '*'
+              maxAge: 30
         - id: course-management-route
           uri: lb://course-management
           predicates:
             - Path=/course-management/**
+          metadata:
+            cors:
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
+              allowedHeaders: '*'
+              maxAge: 30
   application:
     name: gateway-service
 

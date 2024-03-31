@@ -123,10 +123,6 @@ H
 Uservice-registry/src/main/java/com/ms/serviceregistry/ServiceRegistryApplication.java,c\6\c66d74deb485a49de9e67663e143f52db1eede5e
 ò
 hcourse-management/src/main/java/com/ms/coursemanagement/module/registration/dto/feign/StudentCreate.java,9\a\9a92b75c402fe107cd73863c9dddfdcffe3593c6
-û
-ncourse-management/src/main/java/com/ms/coursemanagement/module/registration/controller/RegistrationCourse.java,a\d\ad26798d547d29e7cf186be9ac8ba5fe89ac2b30
-ù
-mcourse-management/src/main/java/com/ms/coursemanagement/module/registration/controller/SallaryController.java,d\b\dbf30a28c0a3d3d353939a3cf05cbd65238d2453
 ú
 lcourse-management/src/main/java/com/ms/coursemanagement/module/registration/controller/SalaryController.java,9\0\90b128281a9d7035bfbc8fe2d363b14d5dde14c2
 ç
@@ -145,3 +141,7 @@ hcourse-management/src/main/java/com/ms/coursemanagement/module/registration/dto
 Rgateway-service/src/main/java/com/ms/gatewayservice/GatewayServiceApplication.java,b\8\b8c51392c8e804dd6fdbfac8ee9a7a5fd26137bc
 G
 gateway-service/pom.xml,6\2\627bed90df51db9ce1f2c987c3ddc0380c236bae
+z
+Jgateway-service/src/main/java/com/ms/gatewayservice/config/CorsConfig.java,3\3\3370ce9cf78a120e25ba472bed97552be6cff170
+§
+tcourse-management/src/main/java/com/ms/coursemanagement/module/registration/constant/RegistrationFilterConstant.java,0\8\08cfbe3074dbe37f7d783cfa6b7371286e4f94c5

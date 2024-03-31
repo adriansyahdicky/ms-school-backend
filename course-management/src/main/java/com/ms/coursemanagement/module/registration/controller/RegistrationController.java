@@ -9,11 +9,27 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/registration")
 @RequiredArgsConstructor
 public class RegistrationController {
     private final RegistrationServices registrationServices;
+
+    @GetMapping
+    public ResponseEntity<Object> view(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size,
+            @RequestParam Map<String, Object> search,
+            @RequestParam(value = "sort_field", required = false) String sortField,
+            @RequestParam(value = "sort_direction", defaultValue = "asc") String sortDirection){
+        return ResponseEntity.ok(registrationServices.view(page,
+                size,
+                search,
+                sortField,
+                sortDirection));
+    }
 
     @PostMapping
     public ResponseEntity<SingleRecordResp> save(@Valid @RequestBody RegistrationCreate dto) {
