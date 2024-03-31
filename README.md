@@ -7,7 +7,7 @@ spesification dari project :
 
 A. untuk menjalankan aplikasi jalankan script ini :
 1. create database db_user_management;
-2. create database db_cours_management
+2. create database db_cours_management;
 3. CREATE TABLE db_user_management.public.student (
 	id varchar(36) NOT NULL,
 	"name" varchar(100) NOT NULL,
