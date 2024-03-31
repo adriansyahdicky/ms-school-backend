@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-management-route
+          uri: lb://user-management
+          predicates:
+            - Path=/user-management/**
+        - id: course-management-route
+          uri: lb://course-management
+          predicates:
+            - Path=/course-management/**
+  application:
+    name: gateway-service
+
+server:
+  port: 8181
